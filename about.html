@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Thankful Touch Clinic</title>
+        <link rel="stylesheet" href="styles/styles.css">
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <img src="images/logo.jpg" alt="Logo">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="education.html">Health Education</a></li>
+                        <li><a href="booking.html">Booking</a></li>
+                        <li><a href="feedback.html">Feedback</a></li>
+                    </ul> 
+                </nav>
+            </div>
+        </header>
+        <main>
+        <section class="container">
+            <aside class="sidebar left-sidebar">
+            <h1>Our Clinic</h1>
+            <p>Thankful Touch Clinic embraces a clean, modern design that reflects our commitment to professional, high-quality healthcare.The environment is welcoming, hygienic, and thoughtfully arranged to ensure comfort, safety, and a sense of trust from the moment you walk in.</p>
+            <div class="photo-gallery">
+                <img src="images/clinic environment.jpg" alt="Clinic Interior">
+                <img src="images/clinic environment2.jpg" alt="Clinic Interior">
+                <img src="images/exterior.jpg" alt="Clinic Exterior">
+            </div>
+            </aside>
+            <article class="main-content">
+            <h2>Our Mission</h2>
+            <p>Our mission is to provide exceptional healthcare services that meet the diverse needs of our patients,aiming to create a supportive and caring environment for our patients, where their health and well being comes first.</p>
+
+            <h3>Our Vision</h3>
+            <p>To be the clinic of choice for individuals and families, known for delivering reliable, compassionate and efficient healthcare services. We envision a healthier community where everyone has access to quality medical care.</p>
+
+            <h4>Our Values</h4>
+            <ul>
+                <li><strong>Compassion:</strong> We treat every patient with kindness and empathy.</li>
+                <li><strong>Integrity:</strong> We are honest, ethical, and accountable.</li>
+                <li><strong>Excellence:</strong> We strive for the highest standards.</li>
+                <li><strong>Collaboration:</strong> We work together across disciplines.</li>
+            </ul>
+            </article>
+            <aside class="sidebar right-sidebar">
+            <h2>Have any questions? Feel free to Contact Us or visit the clinic, We are here to help!</h2>
+            <p><strong>Phone:</strong> +267 71514340 / +267 492 7512</p>
+            <p><strong>Email:</strong> info@thankfultouchclinic.com</p>
+            </aside>
+        </section>
+        </main>
+    <footer>
+        <p>All Rights Reserved| Thankful Touch Clinic</p>
+       
+        <p><strong>Clinic Hours</strong><br>
+        Monday-Saturday: 0800-1800hrs<br>
+        Sunday & Holidays: 0800-1300hrs</p>
+        <p>plot 2915 Francis Street,Francistown,Botswana</p>
+    </footer>
+
+    <script>
+        // Highlight active navigation link
+        document.addEventListener('DOMContentLoaded', function() {
+          const currentPage = location.pathname.split('/').pop();
+          const navLinks = document.querySelectorAll('nav ul li a');
+          
+          navLinks.forEach(link => {
+            if (link.getAttribute('href') === currentPage) {
+              link.classList.add('active');
+            }
+          });
+        });
+      </script>
+
+    </body> 
+</html>

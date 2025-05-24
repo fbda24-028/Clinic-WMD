@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Thankful Touch Clinic</title>
+  <link rel="stylesheet" href="styles/styles.css" />  
+</head>
+<body>
+  <header>
+    <div class="container">
+      <img src="images/logo.jpg" alt="Logo" />
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="education.html">Health Education</a></li>
+          <li><a href="booking.html">Booking</a></li>
+          <li><a href="feedback.html">Feedback</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="container">
+      <aside class="sidebar left-sidebar">
+        <h1>Experience Compassionate Healthcare</h1>
+        <p>Personalized care, professional service, and wellness that puts you first.</p>
+        <a href="booking.html" class="btn">Book an Appointment</a>
+        <img src="images/clinic environment.jpg" alt="Clinic environment" />
+        <img src="images/clinic environment2.jpg" alt="Clinic environment 2" />
+      </aside>
+
+      <article class="main-content">
+        <h2>Welcome to Thankful Touch Clinic</h2>
+        <p>Your trusted partner in health and wellness. From everyday checkups to long-term health plans, we’re here to care for you.</p>
+
+        <h3>What We Offer</h3>
+        <ul class="highlight-cards">
+          <li>
+            <img src="images/compassionate care.jpg" alt="Compassionate Care" />
+            <h4>Compassionate Care</h4>
+            <p>Warm, respectful service tailored to each patient.</p>
+          </li>
+          <li>
+            <img src="images/professional consultation.jpg" alt="Professional Consultations" />
+            <h4>Professional Consultations</h4>
+            <p>Experienced doctors in various specialties.</p>
+          </li>
+          <li>
+            <img src="images/health education.jpg" alt="Health Education" />
+            <h4>Health Education</h4>
+            <p>Empowering you with information to stay healthy.</p>
+          </li>
+        </ul>
+
+        <h3>Online Consultation — Coming Soon</h3>
+        <p>Skip the waiting room. Get expert medical advice from your phone or computer, anywhere, anytime.</p>
+        <img src="images/online consultation.jpg" alt="Online consultation preview" />
+        <p><a href="services.html">Learn More About Our Services →</a></p>
+      </article>
+
+      <aside class="sidebar right-sidebar">
+        <h4>Why Choose Us?</h4>
+        <ul>
+          <li>✔ Trusted care providers</li>
+          <li>✔ Fast service, no long queues</li>
+          <li>✔ Clean, modern facility</li>
+          <li>✔ Easy online appointment booking</li>
+        </ul>
+      </aside>
+    </section>
+  </main>
+
+  <footer>
+    <p>All Rights Reserved | Thankful Touch Clinic</p>
+    <p><strong>Clinic Hours</strong><br>
+      Monday–Saturday: 08:00–18:00 hrs<br>
+      Sunday & Holidays: 08:00–13:00 hrs</p>
+    <p>Plot 2915 Francis Street, Francistown, Botswana</p>
+  </footer>
+
+  <script>
+    // Highlight active navigation link
+    document.addEventListener('DOMContentLoaded', function() {
+      const currentPage = location.pathname.split('/').pop();
+      const navLinks = document.querySelectorAll('nav ul li a');
+      
+      navLinks.forEach(link => {
+        if (link.getAttribute('href') === currentPage) {
+          link.classList.add('active');
+        }
+      });
+    });
+  </script> 
+
+</body>
+</html>

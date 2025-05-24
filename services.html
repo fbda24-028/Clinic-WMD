@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Services - Thankful Touch Clinic</title>
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <img src="images/logo.jpg" alt="Logo">
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="education.html">Health Education</a></li>
+          <li><a href="booking.html">Booking</a></li>
+          <li><a href="feedback.html">Feedback</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="content">
+      <div class="container">
+        <h1>Our Services</h1>
+        <p>At Thankful Touch Clinic, we offer a wide range of healthcare services to support your wellness journey. Below are the primary services we offer to our patients, with pricing details for both private and medical aid clients.</p>
+
+        <div class="service">
+          <h2>General Consultation</h2>
+          <img src="images/general consultation.jpg" alt="General Consultation">
+          <p>Our experienced physicians are available for general health consultations. Whether it’s a cold or a chronic condition, we’ve got you covered.</p>
+          <p><strong>With Medical Aid:</strong> Covered fully or partially depending on plan.<br>
+             <strong>Without Medical Aid:</strong> BWP 300 per session</p>
+          <a href="booking.html" class="btn">Book Now</a>
+        </div>
+
+        <div class="service">
+          <h2>Virtual Appointments</h2>
+          <img src="images/virtual appointments.jpg" alt="Virtual Appointments">
+          <p>Access quality healthcare from the comfort of your home. Book online consultations with our doctors at your convenience.</p>
+          <p><strong>With Medical Aid:</strong> Covered based on your policy.<br>
+             <strong>Without Medical Aid:</strong> BWP 250 per session</p>
+          <p><strong>Coming Soon! Stay tuned for updates.</strong></p>
+        </div>
+
+        <div class="service">
+          <h2>Emergency Medical Care</h2>
+          <img src="images/emergency Care.jpg" alt="Emergency Medical Care">
+          <p>We provide 24/7 emergency care services. Our team is trained to handle urgent medical needs with care and efficiency.</p>
+          <p><strong>With Medical Aid:</strong> Coverage depends on emergency clauses.<br>
+             <strong>Without Medical Aid:</strong> Starting from BWP 600 per case (depending on severity)</p>
+          <a href="booking.html" class="btn">Get Help Now</a>
+        </div>
+
+        <div class="service">
+          <h2>Pediatrics & Family Medicine</h2>
+          <img src="images/pediatrics&family medicine.jpg" alt="Pediatrics & Family Medicine">
+          <p>Comprehensive care for all ages. From newborns to seniors, our family medicine practitioners are here for every member of your family.</p>
+          <p><strong>With Medical Aid:</strong> Included in most family plans.<br>
+             <strong>Without Medical Aid:</strong> BWP 350 per consultation</p>
+          <a href="booking.html" class="btn">Book Appointment</a>
+        </div>
+
+        <div class="service">
+          <h2>Diagnostics and Laboratory</h2>
+          <img src="images/diagnostics&laboratory.jpg" alt="Diagnostics and Laboratory">
+          <p>We offer in-house diagnostic services including blood tests, imaging, and screenings to support timely and accurate diagnosis.</p>
+          <ul>
+            <li>Full Body Checkup</li>
+            <li>Urine Test</li>
+            <li>Blood Sugar & Cholesterol</li>
+            <li>HIV & STD Screening</li>
+            <li>Pregnancy Test</li>
+          </ul>
+          <p><strong>With Medical Aid:</strong> Covered fully or partially based on test.<br>
+             <strong>Without Medical Aid:</strong> BWP 100 - 450 depending on test type</p>
+          <a href="booking.html" class="btn">Schedule Test</a>
+        </div>
+
+        <div class="service">
+          <h2>Health Education & Awareness</h2>
+          <img src="images/health education&awareness.jpg" alt="Health Education & Awareness">
+          <p>Empowering our community through knowledge. Explore educational resources about healthy living, disease prevention, and wellness tips on our <a href="education.html">Health Education</a> page.</p>
+          <p><strong>Free for all visitors.</strong></p>
+          <a href="education.html" class="btn">Learn More</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>All Rights Reserved| Thankful Touch Clinic</p>
+       
+    <p><strong>Clinic Hours</strong><br>
+    Monday-Saturday: 0800-1800hrs<br>
+    Sunday & Holidays: 0800-1300hrs</p>
+    <p>plot 2915 Francis Street,Francistown,Botswana</p>
+  </footer>
+
+  <script>
+    // Highlight active navigation link
+    document.addEventListener('DOMContentLoaded', function() {
+      const currentPage = location.pathname.split('/').pop();
+      const navLinks = document.querySelectorAll('nav ul li a');
+      
+      navLinks.forEach(link => {
+        if (link.getAttribute('href') === currentPage) {
+          link.classList.add('active');
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>

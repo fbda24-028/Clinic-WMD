@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Thankful Touch Clinic</title>
+        <link rel="stylesheet" href="styles/styles.css">
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <img src="images/logo.jpg" alt="Logo">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="education.html">Health Education</a></li>
+                        <li><a href="booking.html">Booking</a></li>
+                        <li><a href="feedback.html">Feedback</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <section class="content">
+                <h1>Health Education</h1>
+                <p>Explore essential health topics to help you and your family stay informed, healthy, and empowered in your wellness journey.</p>
+
+                <article class="health-topic">
+                    <h2>Understanding Diabetes</h2>
+                    <img src="images/understanding diabetees.jpg" alt="Illustration explaining diabetes">
+                    <p>Diabetes is a chronic condition that affects how your body turns food into energy. It’s essential to maintain healthy blood sugar levels through a balanced diet, regular exercise, and medication if prescribed.</p>
+                    <p><strong>Tips:</strong> Eat whole grains, avoid sugary foods, monitor blood glucose levels, stay hydrated.</p>
+                    <p><strong>Recommended Doctor:</strong> Dr. Kabelo Mpho – Pediatrics & Nutrition</p>
+                </article>
+
+                <article class="health-topic">
+                    <h2>Tips for a Heart-Healthy Diet</h2>
+                    <img src="images/healthy heart diet.jpg" alt="Heart-Healthy Diet">
+                    <p>Maintaining a healthy heart starts with what you eat. A heart-healthy diet is low in saturated fat, trans fat, and sodium.</p>
+                    <p><strong>Tips:</strong> Eat plenty of fruits and vegetables, include lean proteins like fish and legumes, and limit salt and processed foods.</p>
+                    <p><strong>Recommended Doctor:</strong> Dr. Kabelo Mpho – Pediatrics & Nutrition</p>
+                </article>
+
+                <article class="health-topic">
+                    <h2>Importance of Regular Checkups</h2>
+                    <img src="images/regular checkups.jpg" alt="Regular Checkups">
+                    <p>Regular health checkups can detect potential issues early, leading to better treatment outcomes and prevention of chronic diseases.</p>
+                    <p><strong>Tips:</strong> Schedule annual physicals, follow vaccination schedules, and stay informed on age-appropriate screenings.</p>
+                    <p><strong>Recommended Doctor:</strong> Dr. Lesego Dube – General Practitioner</p>
+                </article>
+
+                <article class="health-topic">
+                    <h2>Mental Health and Wellness</h2>
+                    <img src="images/mental health&wellness.jpg" alt="Mental Health">
+                    <p>Mental health is just as important as physical health. Managing stress, staying connected, and seeking help when needed can improve quality of life.</p>
+                    <p><strong>Tips:</strong> Practice mindfulness, get enough sleep, talk to a counselor, and engage in regular physical activity.</p>
+                    <p><strong>Recommended Doctor:</strong> Dr. Naledi Molefhe – Mental Health Advocate</p>
+                </article>          
+            </section>
+        </main>
+        <footer>
+            <p>All Rights Reserved | Thankful Touch Clinic</p>
+
+            <p><strong>Clinic Hours</strong><br>
+            Monday–Saturday: 08:00–18:00 hrs<br>
+            Sunday & Holidays: 08:00–13:00 hrs</p>
+            <p>Plot 2915 Francis Street, Francistown, Botswana</p>     
+        </footer>
+
+        <script>
+            // Highlight active navigation link
+            document.addEventListener('DOMContentLoaded', function() {
+              const currentPage = location.pathname.split('/').pop();
+              const navLinks = document.querySelectorAll('nav ul li a');
+              
+              navLinks.forEach(link => {
+                if (link.getAttribute('href') === currentPage) {
+                  link.classList.add('active');
+                }
+              });
+            });
+          </script>
+
+    </body>
+</html>
